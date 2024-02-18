@@ -42,7 +42,7 @@ Extensión para Flask que proporciona integración con el paquete WTForms, una b
 ### Paso 5: Crear una API Simple con Flask (Clonar Repositorio de Github)
 
 ```bash
-git clone [<link>](https://github.com/facuoppi/aws-event-project.git)
+git clone https://github.com/facuoppi/aws-event-project.git
 ```
 
 Clonas el código de tu aplicación Flask desde un repositorio de GitHub.
