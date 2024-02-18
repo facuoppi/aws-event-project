@@ -64,6 +64,8 @@ Interfaz de cliente de Python para interactuar con servicios en la nube de Amazo
 
 ```bash
 git clone https://github.com/facuoppi/aws-event-project.git
+mv project/aws-project/* project/
+rmdir project/aws-project
 ```
 
 Clonas el código de tu aplicación Flask desde un repositorio de GitHub.
