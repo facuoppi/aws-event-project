@@ -1,3 +1,13 @@
+# Formulario de Gestión de Libros
+
+Este proyecto consiste en un formulario web desarrollado en Flask que permite a los usuarios registrar información sobre libros, como título, autor, género, año de publicación y editorial. Los datos ingresados en el formulario se almacenan en una base de datos DynamoDB de AWS.
+
+Además, se implementa un flujo de datos automatizado utilizando los servicios de AWS. Un stream de DynamoDB alimenta un pipeline que envía los datos a una cola SQS. Desde allí, un Lambda es invocado para realizar transformaciones en los datos y luego almacenarlos en un bucket de Amazon S3.
+
+Finalmente, los datos almacenados en S3 pueden ser consultados utilizando Amazon Athena para análisis y generación de informes.
+
+Todo el sistema está desplegado y ejecutándose en una instancia EC2 de AWS, lo que proporciona una plataforma robusta y escalable para la gestión eficiente de libros y análisis de datos.
+
 ## Desplegando una Aplicación Flask en EC2 con Gunicorn y Nginx
 
 Te llevaré paso a paso en la configuración de una aplicación Flask en una instancia de EC2, utilizando Gunicorn como el servidor WSGI y Nginx como un proxy inverso.
@@ -166,3 +176,8 @@ sudo systemctl restart nginx
 ```
 
 Visitar la dirección IP pública de tu instancia EC2 en un navegador confirma que tu aplicación Flask ahora es accesible a través de Nginx, completando el proceso de implementación.
+
+
+## Licencia
+
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE). Consulta el archivo `LICENSE` para obtener más detalles.
