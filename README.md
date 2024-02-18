@@ -32,7 +32,14 @@ pip install flask
 
 Esto instala el framework Flask dentro del entorno virtual, permitiéndote desarrollar aplicaciones web usando Python.
 
-### Paso 4: Crear una API Simple con Flask (Clonar Repositorio de Github)
+### Paso 4: Instalar Flask-WTF
+
+```bash
+pip install Flask-WTF
+```
+Extensión para Flask que proporciona integración con el paquete WTForms, una biblioteca de Python para la creación de formularios web. Flask-WTF simplifica la creación y validación de formularios HTML en aplicaciones Flask.
+
+### Paso 5: Crear una API Simple con Flask (Clonar Repositorio de Github)
 
 ```bash
 git clone <link>
@@ -46,7 +53,7 @@ python app.py
 
 Verificamos que la aplicación funcione asegura que tu API de Flask esté correctamente configurada.
 
-### Paso 5: Instalar Gunicorn
+### Paso 6: Instalar Gunicorn
 
 ```bash
 pip install gunicorn
@@ -60,7 +67,7 @@ gunicorn -b 0.0.0.0:8000 app:app
 
 Ejecutas Gunicorn, uniéndolo a la dirección 0.0.0.0:8000 y especificando el punto de entrada de tu aplicación Flask (app:app).
 
-### Paso 6: Usar systemd para Administrar Gunicorn
+### Paso 7: Usar systemd para Administrar Gunicorn
 
 Creas un archivo de unidad systemd para administrar el proceso de Gunicorn como un servicio.
 
@@ -95,7 +102,7 @@ sudo systemctl start project
 sudo systemctl enable project
 ```
 
-### Paso 7: Ejecutar el Servidor Web Nginx
+### Paso 8: Ejecutar el Servidor Web Nginx
 
 ```bash
 sudo apt-get install nginx
