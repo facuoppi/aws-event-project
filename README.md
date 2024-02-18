@@ -64,6 +64,7 @@ Interfaz de cliente de Python para interactuar con servicios en la nube de Amazo
 
 ```bash
 git clone https://github.com/facuoppi/aws-event-project.git
+cd ..
 mv project/aws-event-project/* project/
 rmdir project/aws-event-project
 ```
