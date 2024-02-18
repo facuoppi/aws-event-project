@@ -53,7 +53,14 @@ pip install Flask-WTF
 ```
 Extensión para Flask que proporciona integración con el paquete WTForms, una biblioteca de Python para la creación de formularios web. Flask-WTF simplifica la creación y validación de formularios HTML en aplicaciones Flask.
 
-### Paso 5: Crear una API Simple con Flask (Clonar Repositorio de Github)
+### Paso 5: Instalar boto3
+
+```bash
+pip install boto3
+```
+Interfaz de cliente de Python para interactuar con servicios en la nube de Amazon Web Services (AWS).
+
+### Paso 6: Crear una API Simple con Flask (Clonar Repositorio de Github)
 
 ```bash
 git clone https://github.com/facuoppi/aws-event-project.git
@@ -67,7 +74,7 @@ python app.py
 
 Verificamos que la aplicación funcione asegura que tu API de Flask esté correctamente configurada.
 
-### Paso 6: Instalar Gunicorn
+### Paso 7: Instalar Gunicorn
 
 ```bash
 pip install gunicorn
@@ -81,7 +88,7 @@ gunicorn -b 0.0.0.0:8000 app:app
 
 Ejecutas Gunicorn, uniéndolo a la dirección 0.0.0.0:8000 y especificando el punto de entrada de tu aplicación Flask (app:app).
 
-### Paso 7: Usar systemd para Administrar Gunicorn
+### Paso 8: Usar systemd para Administrar Gunicorn
 
 Creas un archivo de unidad systemd para administrar el proceso de Gunicorn como un servicio.
 
@@ -116,7 +123,7 @@ sudo systemctl start project
 sudo systemctl enable project
 ```
 
-### Paso 8: Ejecutar el Servidor Web Nginx
+### Paso 9: Ejecutar el Servidor Web Nginx
 
 ```bash
 sudo apt-get install nginx
