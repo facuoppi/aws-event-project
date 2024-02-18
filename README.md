@@ -8,6 +8,10 @@ Finalmente, los datos almacenados en S3 pueden ser consultados utilizando Amazon
 
 Todo el sistema está desplegado y ejecutándose en una instancia EC2 de AWS, lo que proporciona una plataforma robusta y escalable para la gestión eficiente de libros y análisis de datos.
 
+## Arquitectura en AWS
+
+![Oppido Facundo-AWS](https://github.com/facuoppi/aws-event-project/assets/94979941/5d8dd275-d1d7-40d8-93df-7de378e856d6)
+
 ## Desplegando una Aplicación Flask en EC2 con Gunicorn y Nginx
 
 Te llevaré paso a paso en la configuración de una aplicación Flask en una instancia de EC2, utilizando Gunicorn como el servidor WSGI y Nginx como un proxy inverso.
