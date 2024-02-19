@@ -193,8 +193,8 @@ sudo systemctl restart nginx
 Visitar la dirección IP pública de tu instancia EC2 en un navegador confirma que tu aplicación Flask ahora es accesible a través de Nginx, completando el proceso de implementación.
 
 ## Fin
-Muchas gracias por visitar, espero te haya servido.
-Puedes encontrarme en [LinkedIn](https://www.linkedin.com/facuoppi).
+¡Muchas gracias por tu visita! Espero que la información te haya sido útil. 😊
+Puedes encontrarme en [LinkedIn](https://www.linkedin.com/in/facuoppi/).
 
 ## Licencia
 
