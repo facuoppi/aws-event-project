@@ -72,6 +72,7 @@ rm -r project/aws-event-project
 Clonas el código de tu aplicación Flask desde un repositorio de GitHub.
 
 ```bash
+cd project/
 python app.py
 ```
 
