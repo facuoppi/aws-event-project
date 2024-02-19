@@ -13,7 +13,7 @@ csrf = CSRFProtect(app)
 
 # Configura el cliente de DynamoDB usando el rol asignado a la instancia EC2
 session = boto3.Session()
-dynamodb = session.resource('dynamodb', region_name='us-east-1')
+dynamodb = session.resource('dynamodb', region_name='us-east-2')
 
 table_name = 'libros'
 
@@ -31,6 +31,7 @@ def registrar_libro():
     logging.info('Acceso al método registrar libro')
     form = LibroForm()
     if form.validate_on_submit():
+        # Procesa el formulario solo si es una solicitud POST válida
         id = str(uuid.uuid4())
         titulo = form.titulo.data
         autor = form.autor.data
@@ -56,6 +57,7 @@ def registrar_libro():
         except Exception as ex:
             logging.error(f'Ocurrió un error al registrar el libro: {ex}')
             return render_template('error.html')  # Página de error genérico
+    return render_template('exito.html', form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
